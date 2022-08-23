@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan-light: hsl(179, 62%, 50%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --font-family: karla, sans-serif;
+}
+
+@media screen and (max-width: 820px) {
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+    font-family: var(--font-family);
+    background-color: var(--Light-Gray);
+  }
+
+  .main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 2em 3em 2em;
+  }
+
+  .container {
+    background-color: transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 8px;
+  }
+
+  .box {
+    padding: 1.9em 1.5em 1.9em 1.5em;
+  }
+
+  .box-1 {
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .grid-2 > .boxes .box:nth-child(1) {
+    background-color: var(--Cyan);
+    color: white;
+  }
+
+  .grid-2 > .boxes .box:nth-child(2) {
+    background-color: var(--Cyan-light);
+    border-radius: 0 0 8px 8px;
+  }
+
+  .title {
+    padding: 0 0 0.6em 0;
+    font-size: 1.6em;
+    opacity: 0.9;
+  }
+
+  .title-1 {
+    color: var(--Cyan);
+    opacity: 1;
+  }
+
+  .title-2 {
+    opacity: 0.9;
+  }
+
+  .title-3 {
+    color: white;
+  }
+
+  .content {
+    padding: 0 0 1.2em 0;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .content-1 {
+    color: var(--Bright-Yellow);
+  }
+
+  .desc {
+    line-height: 1.7em;
+    color: var(--Grayish-Blue);
+  }
+
+  .rate-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+  }
+
+  .rate-box > * {
+    padding-left: 0.8em;
+  }
+
+  .price {
+    padding: 0;
+    font-size: 1.7em;
+  }
+
+  .month {
+    color: var(--Light-Gray);
+    opacity: 0.7;
+  }
+
+  .content-2 {
+    margin: 0.5em 0 1.5em 0;
+    opacity: 0.8;
+  }
+
+  .btn {
+    width: 100%;
+    border-radius: 7px;
+    padding: 1.1em;
+    border: none;
+    background-color: var(--Bright-Yellow);
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 200ms ease-in-out;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.733);
+    transition: 200ms ease-in-out;
+  }
+
+  .lists > * {
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--Light-Gray);
+    opacity: 0.9;
+  }
+}
